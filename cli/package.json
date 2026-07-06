@@ -1,0 +1,22 @@
+{
+  "name": "sheetsync-cli",
+  "private": true,
+  "version": "0.1.0",
+  "type": "commonjs",
+  "bin": {
+    "sheetsync": "sheetsync.js"
+  },
+  "dependencies": {
+    "@google-cloud/firestore": "^7.11.0",
+    "firebase-admin": "^13.10.0",
+    "google-auth-library": "^9.15.0",
+    "googleapis": "^144.0.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^13.35.1"
+  },
+  "scripts": {
+    "start": "node sheetsync.js",
+    "test": "firebase emulators:exec --only firestore --project demo-sheetsync \"node --test test/*.test.js\""
+  }
+}

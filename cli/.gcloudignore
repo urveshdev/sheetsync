@@ -1,0 +1,8 @@
+# Cloud Run build upload rules (overrides .gitignore for the build).
+node_modules/
+*.log
+.DS_Store
+.clasp.json
+extensions/*.env
+.git/
+test/

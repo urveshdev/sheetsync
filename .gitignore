@@ -1,0 +1,7 @@
+node_modules/
+*.log
+.DS_Store
+.env
+.clasp.json
+# per-install artifact — has your pairing code; never commit
+extensions/*.env
